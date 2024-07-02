@@ -1,4 +1,5 @@
 import { BestBusiness } from "@/components/BestBusiness";
+import { Cards } from "@/components/Cards";
 import { ChooseYourCards } from "@/components/ChooseYourCards";
 import { ControlBilling } from "@/components/ControlBilling";
 import { CounterData } from "@/components/CounterData";
@@ -17,6 +18,7 @@ export default function Home() {
   return (
     <>
       <Header />
+      <Cards/>
       <Hero/>
       <FirstBlock/>
       <TrackRecord/>
