@@ -1,10 +1,9 @@
 "use client"
-import Link from "next/link"
-import { BackgroundRadialRight } from "../BackgroundRadialRight"
-import { MotionTransition } from "../MotionTransition"
-import Image from "next/image"
-import { Reveal } from "../Reveal"
-
+import Link from "next/link";
+import { BackgroundRadialRight } from "../BackgroundRadialRight";
+import { MotionTransition } from "../MotionTransition";
+import Image from "next/image";
+import { Reveal } from "../Reveal";
 
 export function Cards() {
     return (
@@ -13,19 +12,21 @@ export function Cards() {
             <div className="grid max-w-5xl mx-auto md:grid-cols-2">
                 <div>
                     <Reveal>
-                        <h1 className="text-5xl">
+                        <h1 className="text-5xl font-tommy-regular">
                             Diseña tu
-                            <span className="block degradedBlue bg-blueLight">
-                                tu Propia tarjeta 
+                            <span className="block degradedBlue bg-blueLight font-tommy-black">
+                                tu Propia tarjeta
                             </span>
                             para todos
                         </h1>
                     </Reveal>
                     <Reveal>
-                        <p className="max-w-md mt-10">Nuestro equipo de expertos utiliza una metodología
+                        <p className="max-w-md mt-10 font-tommy-regular">
+                            Nuestro equipo de expertos utiliza una metodología
                             para identificar las tarjetas de crédito que probablemente
                             se ajusten a sus necesidades. Examinamos tasas
-                            porcentuales anuales, tarifas anuales.</p>
+                            porcentuales anuales, tarifas anuales.
+                        </p>
                     </Reveal>
                     <Reveal>
                         <div className="my-8">
