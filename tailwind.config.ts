@@ -23,9 +23,9 @@ const config: Config = {
         OrangeRadial:
           "linear-gradient(90deg, #FF5600 0%, rgba(255, 85, 0, 0.6) 95.83%)",
         Orange:
-          "linear-gradient(90deg, #FF5600 0%, rgba(255, 255, 255, 0.86) 95.83%)",
+          "linear-gradient(90deg, #7623E2 0%, rgba(255, 255, 255, 0.86) 95.83%)",
         OrangeLight:
-          "linear-gradient(90deg, #FF925B 0%, rgba(255, 255, 255, 0.86) 95.83%)",
+          "linear-gradient(90deg, #7623E2 0%, rgba(255, 255, 255, 0.86) 95.83%)",
           
       },
       boxShadow: {
