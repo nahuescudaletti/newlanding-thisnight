@@ -657,6 +657,9 @@ video {
 .relative {
   position: relative;
 }
+.inset-0 {
+  inset: 0px;
+}
 .bottom-4 {
   bottom: 1rem;
 }
@@ -714,6 +717,10 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .mb-10 {
   margin-bottom: 2.5rem;
@@ -793,6 +800,9 @@ video {
 .h-full {
   height: 100%;
 }
+.h-72 {
+  height: 18rem;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -801,6 +811,9 @@ video {
 }
 .w-48 {
   width: 12rem;
+}
+.w-72 {
+  width: 18rem;
 }
 .w-auto {
   width: auto;
@@ -842,6 +855,9 @@ video {
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.transform-gpu {
+  transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .cursor-pointer {
   cursor: pointer;
@@ -944,6 +960,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
 .bg-opacity-5 {
   --tw-bg-opacity: 0.05;
 }
@@ -958,6 +978,9 @@ video {
 }
 .bg-OrangeRadial {
   background-image: linear-gradient(90deg, #FF5600 0%, rgba(255, 85, 0, 0.6) 95.83%);
+}
+.bg-blueLight {
+  background-image: linear-gradient(90deg, #6de4e8 0%, rgba(255, 255, 255, 0.86) 95.83% );
 }
 .bg-cover {
   background-size: cover;
@@ -1149,6 +1172,11 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -1204,6 +1232,12 @@ body {
   100% {
     transform: translate(-100%);
   }
+}
+
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:bg-gray-100:hover {
@@ -1306,6 +1340,10 @@ body {
     height: 100vh;
   }
 
+  .md\:h-auto {
+    height: auto;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -1324,6 +1362,10 @@ body {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:max-w-7xl {
