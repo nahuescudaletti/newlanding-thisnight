@@ -8,6 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      width: {
+        '250': '250px',
+        '300': '300px',
+        '350': '350px',
+        '400': '400px',
+      },
+      height: {
+        '156': '156px',
+        '187': '187px',
+        '218': '218px',
+        '250': '250px',
+      },
       colors: {
         primary: "#fff",
         primaryDark: "rgba(255,255,255, 0.7);",

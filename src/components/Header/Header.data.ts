@@ -1,8 +1,8 @@
 export const dataHeader = [
     {
     id: 1,
-    name: "Products",
-    idLink: "#products",
+    name: "Home",
+    idLink: "#home",
   },
   {
     id: 2,

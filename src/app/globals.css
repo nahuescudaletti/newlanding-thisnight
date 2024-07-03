@@ -44,3 +44,28 @@ body {
     transform: translate(-100%);
   }
 }
+
+.w-250 {
+  width: 250px;
+}
+.w-300 {
+  width: 300px;
+}
+.w-350 {
+  width: 350px;
+}
+.w-400{
+  width: 400px;
+}
+.h-156 {
+  height: 156px;
+}
+.h-187 {
+  height: 187px;
+}
+.h-218 {
+  height: 218px;
+}
+.h-250 {
+  height: 250px;
+}
