@@ -42,6 +42,8 @@ const config: Config = {
       },
       boxShadow: {
         dark: "0px 20px 100px -10px rgba(66, 71, 91, 0.1)",
+        custom: '0 0 10px rgba(255, 255, 255, 0.4)',
+
       },
       fontFamily: {
         'sans': ['Montserrat', 'sans-serif'],
@@ -50,6 +52,7 @@ const config: Config = {
         'light': ['Montserrat-Light', 'sans-serif'],
         'thin': ['Montserrat-Thin', 'sans-serif'],
         'extralight': ['Montserrat-ExtraLight', 'sans-serif'],
+        'asap': ['Asap', 'sans-serif'],
       },
     },
   },

@@ -51,6 +51,16 @@
   resolved "https://registry.npmjs.org/@eslint/js/-/js-8.57.0.tgz"
   integrity sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==
 
+"@fontsource/asap@^5.0.20":
+  version "5.0.20"
+  resolved "https://registry.npmjs.org/@fontsource/asap/-/asap-5.0.20.tgz"
+  integrity sha512-h9N3AhgD0mzuYT4H9y2zEfQjQFi3NBY6/EeD0ffifJ8V09Br9h03gZVJuDfe5W9fVtoT6QLuKSYY45HCTUK3ow==
+
+"@fontsource/montserrat@^5.0.18":
+  version "5.0.18"
+  resolved "https://registry.npmjs.org/@fontsource/montserrat/-/montserrat-5.0.18.tgz"
+  integrity sha512-85JBs2rCdFK/VBdSb401e2lXk5gynVo2zi3Rh2Guem4WNtT2q52+V90o3KzjmajY3TPJvCZA/kI7R05ev7148g==
+
 "@humanwhocodes/config-array@^0.11.14":
   version "0.11.14"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.14.tgz"
@@ -125,6 +135,11 @@
   integrity sha512-vI94U+D7RNgX6XypSyjeFrOzxGlZyxOplU0dVE5norIfZGn/LDjJYPHdvdsR5vN1eRtl6PDAsOHmycFEOljK5A==
   dependencies:
     glob "7.1.7"
+
+"@next/font@^14.2.4":
+  version "14.2.4"
+  resolved "https://registry.npmjs.org/@next/font/-/font-14.2.4.tgz"
+  integrity sha512-RPB5kQk8jo8ZeiuryobDuV58FxB3VAiN+ckZ0zPKRl/4YLTSSekMUCwpoqav6y/bL2+hJCWjN8RMgjrBHT6r/g==
 
 "@next/swc-darwin-arm64@13.5.4":
   version "13.5.4"
@@ -1929,7 +1944,7 @@ natural-compare@^1.4.0:
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
-next@^13.5.4:
+next@*, next@^13.5.4:
   version "13.5.4"
   resolved "https://registry.npmjs.org/next/-/next-13.5.4.tgz"
   integrity sha512-+93un5S779gho8y9ASQhb/bTkQF17FNQOtXLKAj3lsNgltEcF0C5PMLLncDmH+8X1EnJH1kbqAERa29nRXqhjA==

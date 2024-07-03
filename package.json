@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/asap": "^5.0.20",
+    "@fontsource/montserrat": "^5.0.18",
+    "@next/font": "^14.2.4",
     "axios": "^1.7.2",
     "clsx": "^2.1.1",
     "emailjs-com": "^3.2.0",

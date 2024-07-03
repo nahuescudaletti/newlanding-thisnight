@@ -4,7 +4,12 @@ import Head from 'next/head'; // Importa Head desde next/head
 import { Reveal } from "../Reveal";
 import { getBasePath } from "@/utils/utils";
 import { BackgroundRadialLeft } from '../BackgroundRadialLeft';
+import { Asap } from 'next/font/google';
 
+// Llama a Asap fuera del cuerpo del componente y asigna su resultado a una constante
+const asapFont = Asap({
+  preload: false // Deshabilita la precarga si no necesitas subconjuntos específicos
+});
 export function Cards() {
     const [isHovering, setIsHovering] = useState(false);
     const [backgroundImage, setBackgroundImage] = useState(`${getBasePath()}/assets/cardthisnight.png`);
@@ -96,16 +101,23 @@ export function Cards() {
                     <div className="flex flex-col items-center justify-center">
                         <Reveal>
                             <div className="flex flex-col items-center sm:items-start gap-4 text-center md:text-left">
-                                <h1 className="text-1xl sm:text-3xl lg:text-4xl font-semibold tracking-wider">DISEÑA TU PROPIA</h1>
-                                <h1 className="text-1xl sm:text-3xl lg:text-4xl font-semibold tracking-wider">TARJETA CON</h1>
-                                <h1 className="text-2xl sm:text-4xl lg:text-6xl degradedBlue bg-OrangeLight font-extrabold tracking-wider mb-4 p-0">THIS NIGHT</h1>
+                                <h1 className='text-1xl sm:text-3xl lg:text-4xl font-semibold tracking-wider'>DISEÑA TU PROPIA</h1>
+                                <h1 className='text-1xl sm:text-3xl lg:text-4xl font-semibold tracking-wider'>TARJETA CON</h1>
+                                <h1 className={`${asapFont.className} text-2xl sm:text-4xl lg:text-6xl degradedBlue bg-OrangeLight tracking-wider mb-4 p-0`}>
+                                    <span className='font-regular'>
+                                        THIS
+                                    </span>{' '}
+                                    <span className='font-bold'>
+                                        NIGHT
+                                    </span>
+                                </h1>
                             </div>
                         </Reveal>
                     </div>
                     <div className="flex flex-col items-center">
                         <div
                             ref={cardItemRef}
-                            className="card-itemtn overflow-hidden relative flex items-center justify-center rounded-3xl w-250 md:w-300 lg:w-350 xl:w-400 h-156 md:h-187 lg:h-218 xl:h-250"
+                            className="card-itemtn overflow-hidden relative flex items-center justify-center rounded-3xl w-250 md:w-300 lg:w-350 xl:w-400 h-156 md:h-187 lg:h-218 xl:h-250 shadow-custom"
                             onMouseMove={startRotate}
                             onMouseLeave={stopRotate}
                             style={{
