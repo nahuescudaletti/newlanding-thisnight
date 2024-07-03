@@ -1,5 +1,6 @@
 "use client";
 import { useRef, useState } from 'react';
+import Head from 'next/head'; // Importa Head desde next/head
 import { Reveal } from "../Reveal";
 import { getBasePath } from "@/utils/utils";
 import { BackgroundRadialLeft } from '../BackgroundRadialLeft';
@@ -73,92 +74,108 @@ export function Cards() {
         }
     };
 
+    // Define los metadatos para SEO
+    const meta = {
+        title: 'Diseña tu propia tarjeta con This Night',
+        description: 'Personaliza tu tarjeta con This Night.',
+        keywords: 'tarjeta personalizada, This Night, diseño de tarjeta, evento, discoteca, gestión de eventos',
+    };
+
     return (
-        <div className="relative p-4 md:py-20 flex flex-col items-center">
-            <BackgroundRadialLeft />
-            <div className="grid grid-cols-1 md:grid-cols-2 justify-around w-full max-w-5xl mx-auto">
-                <div className="flex flex-col items-center justify-center">
-                    <Reveal>
-                        <div className="flex flex-col items-center sm:items-start gap-4 text-center md:text-left">
-                            <h1 className="text-1xl sm:text-3xl lg:text-4xl font-semibold tracking-wider">DISEÑA TU PROPIA</h1>
-                            <h1 className="text-1xl sm:text-3xl lg:text-4xl font-semibold tracking-wider">TARJETA CON</h1>
-                            <h1 className="text-2xl sm:text-4xl lg:text-6xl degradedBlue bg-OrangeLight font-extrabold tracking-wider mb-4 p-0">THIS NIGHT</h1>
-                        </div>
-                    </Reveal>
-                </div>
-                <div className="flex flex-col items-center">
-                    <div
-                        ref={cardItemRef}
-                        className="card-itemtn overflow-hidden relative flex items-center justify-center rounded-3xl w-250 md:w-300 lg:w-350 xl:w-400 h-156 md:h-187 lg:h-218 xl:h-250"
-                        onMouseMove={startRotate}
-                        onMouseLeave={stopRotate}
-                        style={{
-                            backgroundImage: `url(${backgroundImage})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            transition: 'transform 0.3s ease',
-                            transform: isHovering ? 'translateZ(30px)' : '',
-                        }}
-                    >
-                        {logoImage && (
-                            <img
-                                src={logoImage}
-                                alt="Logo"
-                                style={{
-                                    maxWidth: '50%',
-                                    maxHeight: '50%',
-                                    objectFit: 'contain'
-                                }}
-                            />
-                        )}
+        <>
+            <Head>
+                <title>{meta.title}</title>
+                <meta name="description" content={meta.description} />
+                <meta name="keywords" content={meta.keywords} />
+                {/* Otros metadatos como Open Graph y Twitter Cards si es necesario */}
+            </Head>
+
+            <div className="relative p-4 md:py-20 flex flex-col items-center" id='home'>
+                <BackgroundRadialLeft />
+                <div className="grid grid-cols-1 md:grid-cols-2 justify-around w-full max-w-5xl mx-auto">
+                    <div className="flex flex-col items-center justify-center">
+                        <Reveal>
+                            <div className="flex flex-col items-center sm:items-start gap-4 text-center md:text-left">
+                                <h1 className="text-1xl sm:text-3xl lg:text-4xl font-semibold tracking-wider">DISEÑA TU PROPIA</h1>
+                                <h1 className="text-1xl sm:text-3xl lg:text-4xl font-semibold tracking-wider">TARJETA CON</h1>
+                                <h1 className="text-2xl sm:text-4xl lg:text-6xl degradedBlue bg-OrangeLight font-extrabold tracking-wider mb-4 p-0">THIS NIGHT</h1>
+                            </div>
+                        </Reveal>
                     </div>
-                    <div className="mt-5 md:mt-10 flex items-center space-x-4">
-                        <button
-                            type='button'
-                            onClick={handleBackgroundButtonClick}
-                            className='relative inline-block p-px font-semibold leading-6 text-white no-underline bg-slate-950 shadow-2xl cursor-pointer group rounded-xl shadow-zinc-900 text-xs md:text-base' // Reducido tamaño de texto para móvil
+                    <div className="flex flex-col items-center">
+                        <div
+                            ref={cardItemRef}
+                            className="card-itemtn overflow-hidden relative flex items-center justify-center rounded-3xl w-250 md:w-300 lg:w-350 xl:w-400 h-156 md:h-187 lg:h-218 xl:h-250"
+                            onMouseMove={startRotate}
+                            onMouseLeave={stopRotate}
+                            style={{
+                                backgroundImage: `url(${backgroundImage})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                transition: 'transform 0.3s ease',
+                                transform: isHovering ? 'translateZ(30px)' : '',
+                            }}
                         >
-                            <span className="absolute inset-0 overflow-hidden rounded-xl">
-                                <span className="absolute inset-0 rounded-xl bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(54,31,117,0.6)_0%,rgba(54,31,117,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                            {logoImage && (
+                                <img
+                                    src={logoImage}
+                                    alt="Logo"
+                                    style={{
+                                        maxWidth: '50%',
+                                        maxHeight: '50%',
+                                        objectFit: 'contain'
+                                    }}
+                                />
+                            )}
+                        </div>
+                        <div className="mt-5 md:mt-10 flex items-center space-x-4">
+                            <button
+                                type='button'
+                                onClick={handleBackgroundButtonClick}
+                                className='relative inline-block p-px font-semibold leading-6 text-white no-underline bg-slate-950 shadow-2xl cursor-pointer group rounded-xl shadow-zinc-900 text-xs md:text-base' // Reducido tamaño de texto para móvil
+                            >
+                                <span className="absolute inset-0 overflow-hidden rounded-xl">
+                                    <span className="absolute inset-0 rounded-xl bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(54,31,117,0.6)_0%,rgba(54,31,117,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                                    </span>
                                 </span>
-                            </span>
-                            <div className="relative z-10 flex items-center px-3 md:px-6 py-2 md:py-3 space-x-2 rounded-xl bg-gray-950/50 ring-1 ring-white/10">
-                                <span>Seleccionar tu Fondo</span>
-                            </div>
-                            <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-gray-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
-                        </button>
+                                <div className="relative z-10 flex items-center px-3 md:px-6 py-2 md:py-3 space-x-2 rounded-xl bg-gray-950/50 ring-1 ring-white/10">
+                                    <span>Seleccionar tu Fondo</span>
+                                </div>
+                                <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-gray-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
+                            </button>
 
-                        <input
-                            type="file"
-                            ref={backgroundInputRef}
-                            style={{ display: 'none' }}
-                            onChange={handleBackgroundChange}
-                        />
+                            <input
+                                type="file"
+                                ref={backgroundInputRef}
+                                style={{ display: 'none' }}
+                                onChange={handleBackgroundChange}
+                            />
 
-                        <button
-                            type='button'
-                            onClick={handleLogoButtonClick}
-                            className='relative inline-block p-px font-semibold leading-6 text-white no-underline bg-slate-950 shadow-2xl cursor-pointer group rounded-xl shadow-zinc-900 text-xs md:text-base' // Reducido tamaño de texto para móvil
-                        >
-                            <span className="absolute inset-0 overflow-hidden rounded-xl">
-                                <span className="absolute inset-0 rounded-xl bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(54,31,117,0.6)_0%,rgba(54,31,117,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                            <button
+                                type='button'
+                                onClick={handleLogoButtonClick}
+                                className='relative inline-block p-px font-semibold leading-6 text-white no-underline bg-slate-950 shadow-2xl cursor-pointer group rounded-xl shadow-zinc-900 text-xs md:text-base' // Reducido tamaño de texto para móvil
+                            >
+                                <span className="absolute inset-0 overflow-hidden rounded-xl">
+                                    <span className="absolute inset-0 rounded-xl bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(54,31,117,0.6)_0%,rgba(54,31,117,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                                    </span>
                                 </span>
-                            </span>
-                            <div className="relative z-10 flex items-center px-3 md:px-6 py-2 md:py-3 space-x-2 rounded-xl bg-gray-950/50 ring-1 ring-white/10">
-                                <span>Seleccionar tu Logo</span>
-                            </div>
-                            <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-gray-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
-                        </button>
+                                <div className="relative z-10 flex items-center px-3 md:px-6 py-2 md:py-3 space-x-2 rounded-xl bg-gray-950/50 ring-1 ring-white/10">
+                                    <span>Seleccionar tu Logo</span>
+                                </div>
+                                <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-gray-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
+                            </button>
 
-                        <input
-                            type="file"
-                            ref={logoInputRef}
-                            style={{ display: 'none' }}
-                            onChange={handleLogoChange}
-                        />
+                            <input
+                                type="file"
+                                ref={logoInputRef}
+                                style={{ display: 'none' }}
+                                onChange={handleLogoChange}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }

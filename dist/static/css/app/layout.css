@@ -1277,6 +1277,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  padding: 5px 0;
 }
 
 .swiper-pagination-bullet {
