@@ -2,6 +2,8 @@
 import { BackgroundRadialRight } from "../BackgroundRadialRight";
 import { MotionTransition } from "../MotionTransition";
 import { Reveal } from "../Reveal";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRocket, faCheck, faHourglass, faChartLine } from '@fortawesome/free-solid-svg-icons';
 
 export function FirstBlock() {
     return (
@@ -13,56 +15,85 @@ export function FirstBlock() {
                         <Reveal>
                             <h1 className="text-3xl sm:text-4xl md:text-6xl font-semibold text-center font-montserrat">
                                 <span className="block degradedBlue bg-Orange">
-                                    lorem
+                                    Gestión de boliches
                                 </span>
                             </h1>
                         </Reveal>
                         <Reveal>
-                            <p className="max-w-md mt-6 text-base md:text-xl font-light font-montserrat tracking-wide text-center md:text-left">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus illum eos rem magnam eius cumque alias atque doloremque. Beatae accusamus nostrum debitis nemo sequi, vitae fuga ducimus repellendus? Ipsum nesciunt sint accusamus dolor maiores natus odio! In dolorum quod odit.
+                            <p className="max-w-md mt-6 text-base md:text-xl font-light font-montserrat tracking-wide text-center md:text-left md:text-center">
+                                Comienza tu 2024 con la última tecnología y lleva tu evento a otro nivel.
                             </p>
                         </Reveal>
                     </div>
                     <div className="md:col-span-1 grid grid-cols-1 gap-8">
                         <MotionTransition>
                             <div className="border-transparent shadow-dark rounded-3xl bg-white bg-opacity-5 backdrop-blur-lg">
-                                <div className="p-6">
-                                    <Reveal>
-                                        <h3 className="text-xl md:text-3xl font-semibold">lorem</h3>
-                                    </Reveal>
-                                    <Reveal>
-                                        <p className="text-sm md:text-base">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, assumenda. Expedita debitis blanditiis ratione at cum architecto hic consectetur dolores.
-                                        </p>
-                                    </Reveal>
+                                <div className="p-6 flex items-center">
+                                    <FontAwesomeIcon icon={faRocket} className="text-purple-500 text-xl md:text-2xl mr-4 flex-shrink-0" />
+                                    <div>
+                                        <Reveal>
+                                            <h3 className="text-xl md:text-2xl font-semibold">Fluidez en barras y cajas</h3>
+                                        </Reveal>
+                                        <Reveal>
+                                            <p className="text-sm md:text-base">
+                                                Operaciones rápidas y eficientes que aumentan la productividad.
+                                            </p>
+                                        </Reveal>
+                                    </div>
                                 </div>
                             </div>
                         </MotionTransition>
+
                         <MotionTransition>
                             <div className="border-transparent shadow-dark rounded-3xl bg-white bg-opacity-5 backdrop-blur-lg">
-                                <div className="p-6">
-                                    <Reveal>
-                                        <h3 className="text-xl md:text-3xl font-semibold">lorem</h3>
-                                    </Reveal>
-                                    <Reveal>
-                                        <p className="text-sm md:text-base">
-                                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur temporibus aliquam placeat labore magnam ab corporis ea molestiae laboriosam velit doloremque quae deleniti minima cupiditate, totam vitae impedit explicabo unde aspernatur quos harum accusantium! Nulla impedit iste et laborum enim.
-                                        </p>
-                                    </Reveal>
+                                <div className="p-6 flex items-center">
+                                    <FontAwesomeIcon icon={faCheck} className="text-purple-500 text-xl md:text-2xl mr-4 flex-shrink-0" />
+                                    <div>
+                                        <Reveal>
+                                            <h3 className="text-xl md:text-2xl font-semibold">Individualización del cliente</h3>
+                                        </Reveal>
+                                        <Reveal>
+                                            <p className="text-sm md:text-base">
+                                                Reconocimiento de datos y preferencias del cliente.
+                                            </p>
+                                        </Reveal>
+                                    </div>
                                 </div>
                             </div>
                         </MotionTransition>
+
                         <MotionTransition>
                             <div className="border-transparent shadow-dark rounded-3xl bg-white bg-opacity-5 backdrop-blur-lg">
-                                <div className="p-6">
-                                    <Reveal>
-                                        <h3 className="text-xl md:text-3xl font-semibold">lorem</h3>
-                                    </Reveal>
-                                    <Reveal>
-                                        <p className="text-sm md:text-base">
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, molestiae recusandae reprehenderit, repudiandae quas cumque omnis illo quo hic soluta eius dolorum sapiente consectetur labore. Culpa, ab aspernatur repellendus atque sapiente veniam odit soluta, itaque impedit maxime esse iusto ad!
-                                        </p>
-                                    </Reveal>
+                                <div className="p-6 flex items-center">
+                                    <FontAwesomeIcon icon={faHourglass} className="text-purple-500 text-xl md:text-2xl mr-4 flex-shrink-0" />
+                                    <div>
+                                        <Reveal>
+                                            <h3 className="text-xl md:text-2xl font-semibold">Gestión integral en tiempo real</h3>
+                                        </Reveal>
+                                        <Reveal>
+                                            <p className="text-sm md:text-base">
+                                                Monitoreo y control basadas en datos en tiempo real.
+                                            </p>
+                                        </Reveal>
+                                    </div>
+                                </div>
+                            </div>
+                        </MotionTransition>
+
+                        <MotionTransition>
+                            <div className="border-transparent shadow-dark rounded-3xl bg-white bg-opacity-5 backdrop-blur-lg">
+                                <div className="p-6 flex items-center">
+                                    <FontAwesomeIcon icon={faChartLine} className="text-purple-500 text-xl md:text-2xl mr-4 flex-shrink-0" />
+                                    <div>
+                                        <Reveal>
+                                            <h3 className="text-xl md:text-2xl font-semibold">Análisis avanzado de métricas y KPIs</h3>
+                                        </Reveal>
+                                        <Reveal>
+                                            <p className="text-sm md:text-base">
+                                                Evaluación de datos para optimizar estrategias y mejorar el rendimiento.
+                                            </p>
+                                        </Reveal>
+                                    </div>
                                 </div>
                             </div>
                         </MotionTransition>
@@ -72,3 +103,5 @@ export function FirstBlock() {
         </div>
     );
 }
+
+export default FirstBlock;

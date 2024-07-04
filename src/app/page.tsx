@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Cards/>
       <Hero/>
+      <Cards/>
       <FirstBlock/>
       <TrackRecord/>
       <OurHelp/>

@@ -23,18 +23,18 @@ export function OurHelp() {
                         <Reveal>
                             <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold font-montserrat">
                                 <span className="block degradedBlue bg-Orange">
-                                    Everything you can't do without our help
+                                   Módulos
                                 </span>
                             </h1>
                         </Reveal>
                         <Reveal>
                             <p className="w-full mx-auto mt-5 text-base md:text-xl font-light font-montserrat tracking-wide text-center mb-10">
-                                Free up valuable time by delegating this type of work to us, and together we'll grow your brand.
+                                Con nuestros módulos, garantizamos una administración eficiente y sin pérdidas para tu evento.
                             </p>
                         </Reveal>
                     </div>
                 </MotionTransition>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-10">
                     {dataOurhelp.map(({ id, title, description, description2 }) => (
                         <MotionTransition key={id}>
                             <div className="border-transparent shadow-dark rounded-3xl bg-white bg-opacity-5 backdrop-blur-lg h-full">
