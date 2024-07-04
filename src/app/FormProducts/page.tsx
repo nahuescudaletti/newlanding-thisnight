@@ -25,17 +25,6 @@ export default function FormProducts() {
                     <h1 className="text-3xl md:text-4xl font-semibold mb-4">{title}</h1>
                     {descriptionParagraphs}
                 </div>
-                <div className="w-full md:w-1/2 flex flex-col items-center">
-                    <iframe
-                        width="100%"
-                        height="1300px"
-                        src="https://c80e6f6d.sibforms.com/serve/MUIFANWvvaZFXo_tRxcRtxoHakZD95qN5omeETWAbmJPE7xwD4HWpAzwvO8KWUeY5fcGh-vPPFBy8x1kuwDpQsA4w_yTNfGLleAohGfoHoBzfPcGu_DeWiOktup9L3RHq_TH7g4VgK1UtaVxBgNnNNGyThepHk7RI4kpObVVKn1NJNeu8ppcVEocnimUckutEK2PIYe8amhjou3O"
-                        frameBorder="0"
-                        scrolling="no"
-                        allowFullScreen
-                        style={{ display: 'block' }}
-                    ></iframe>
-                </div>
             </div>
             <button
                 onClick={() => router.back()}

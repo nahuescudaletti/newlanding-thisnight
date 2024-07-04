@@ -21,7 +21,7 @@ export function FirstBlock() {
                         </Reveal>
                         <Reveal>
                             <p className="max-w-md mt-6 text-base md:text-xl font-light font-montserrat tracking-wide text-center md:text-left md:text-center">
-                                Comienza tu 2024 con la última tecnología y lleva tu evento a otro nivel.
+                                Impulsa tu evento con la última tecnología y llevándolo a otro nivel.
                             </p>
                         </Reveal>
                     </div>
