@@ -10,13 +10,6 @@ import { useRouter } from 'next/navigation';
 export function OurHelp() {
     const router = useRouter();
 
-    const handleLearnMore = (title: string, description: string, features: any[]) => {
-        // Construir la descripción completa usando los beneficios y descripciones de features
-        const fullDescription = features.map(feature => `${feature.beneficios}: ${feature.descriptionBeneficios}`).join('\n');
-
-        router.push(`/FormProducts?title=${encodeURIComponent(title)}&description=${encodeURIComponent(description)}&description2=${encodeURIComponent(fullDescription)}`);
-    };
-
     return (
         <div className="relative px-4 py-20 md:py-20" id='products'>
             <BackgroundRadialRight />
@@ -26,7 +19,7 @@ export function OurHelp() {
                         <Reveal>
                             <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold font-montserrat">
                                 <span className="block degradedBlue bg-Orange">
-                                   Módulos
+                                Módulos
                                 </span>
                             </h1>
                         </Reveal>
@@ -38,7 +31,7 @@ export function OurHelp() {
                     </div>
                 </MotionTransition>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-10">
-                    {dataOurhelp.map(({ id, title, description, features }) => (
+                    {dataOurhelp.map(({ id, title, description }) => (
                         <MotionTransition key={id}>
                             <div className="border-transparent shadow-dark rounded-3xl bg-white bg-opacity-5 backdrop-blur-lg h-full">
                                 <div className="p-6 h-full flex flex-col justify-between">
@@ -52,7 +45,6 @@ export function OurHelp() {
                                     </div>
                                     <Reveal>
                                         <button
-                                            onClick={() => handleLearnMore(title, description, features)}
                                             className="text-orange-500 mt-4 flex items-center space-x-2 text-sm"
                                         >
                                             Learn more

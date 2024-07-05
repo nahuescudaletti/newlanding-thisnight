@@ -21,14 +21,14 @@ export default function Home() {
       <Hero/>
       <Cards/>
       <FirstBlock/>
-      <TrackRecord/>
       <OurHelp/>
+      <BestBusiness />
+      <TrackRecord/>
       <Testimonials/>
       <Team/>
       <WppFloating/>
       <PaymentsMethods />
       <CounterData />
-      <BestBusiness />
       <ChooseYourCards />
       <ControlBilling />
       <Footer />
