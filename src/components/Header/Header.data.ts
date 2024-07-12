@@ -6,12 +6,12 @@ export const dataHeader = [
   },
   {
     id: 2,
-    name: "About us",
-    idLink: "#aboutus",
+    name: "Equipo",
+    idLink: "#team",
   },
   {
     id: 3,
-    name: "Newsletter",
-    idLink: "#newsletter",
+    name: "Experiencias",
+    idLink: "#experiencias",
   },
 ];

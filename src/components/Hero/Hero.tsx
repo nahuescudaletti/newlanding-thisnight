@@ -21,9 +21,9 @@ export function Hero() {
                         />
                     </Reveal>
                     <p className="text-center text-xs md:text-sm lg:text-2xl font-montserrat mb-8">Gestiona tu evento en tiempo real desde una sola App.</p>
-                    <div className="my-10">
-                        <Link href="#form" className="px-4 py-3 rounded-md bg-OrangeRadial font-regular font-montserrat">Agendar un meet!</Link>
-                    </div>
+                    <Link href="https://bento.me/thisnight" target="_blank" rel="noopener noreferrer" className="px-4 py-3 rounded-md bg-OrangeRadial font-regular font-montserrat">
+                        Agendar un meet!
+                    </Link>
                 </div>
             </div>
         </MotionTransition>

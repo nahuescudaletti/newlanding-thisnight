@@ -6,7 +6,7 @@ import { Slide } from "./Slide"
 
 export function Team() {
     return (
-        <div className="relative" id="testimonios">
+        <div className="relative" id="team">
             <BackgroundRadialLeft />
             <div className="flex flex-col items-center justify-center min-h-screen">
                 <Reveal>

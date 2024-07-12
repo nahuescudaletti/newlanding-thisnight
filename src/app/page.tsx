@@ -31,8 +31,8 @@ export default function Home() {
       <TrackRecord/>
       <Testimonials/>
       <Team/>
-      {/* <WppFloating/>
-      <PaymentsMethods />
+      <WppFloating/>
+      {/* <PaymentsMethods />
       <CounterData />
       <ChooseYourCards />
       <ControlBilling /> */}

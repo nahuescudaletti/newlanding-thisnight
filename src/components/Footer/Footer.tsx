@@ -33,7 +33,7 @@ export function Footer() {
                     </div>
                     <div className="flex gap-5 items-center">
                         {footerSocialNetworks.map(({ id, icon, link }) => (
-                            <Link key={id} href={link} className="text-2xl">
+                            <Link key={id} href={link} className="text-2xl" target= "_blank" rel= "noopener noreferrer">
                                 {icon}
                             </Link>
                         ))}

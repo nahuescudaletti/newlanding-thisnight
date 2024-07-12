@@ -4,7 +4,7 @@ import { testimonialsData } from "./Testimonials.data";
 
 export default function Testimonials() {
     return (
-        <div className="relative px-6 pt-20 md:pt-40">
+        <div className="relative px-6 pt-20 md:pt-40" id="experiencias">
             <BackgroundRadialLeft />
             <BackgroundRadialRight />
             <div className="flex flex-col items-center justify-center">

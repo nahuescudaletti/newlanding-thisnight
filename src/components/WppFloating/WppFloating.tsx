@@ -8,12 +8,12 @@ const WppFloating = () => {
       href="https://wa.me/1234567890" // Reemplaza con tu número de WhatsApp
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-4 left-4 text-white p-4 rounded-full shadow-md transition duration-300"
+      className="fixed bottom-0 right-0 text-white p-4 rounded-full shadow-md transition duration-300"
     >
       <Image 
-        src={`${getBasePath()}/assets/wpp.png`} 
+        src={`${getBasePath()}/assets/wppicon4.png`} 
         alt="Testimonial" 
-        width={60} 
+        width={100} 
         height={50} 
       />
     </a>
