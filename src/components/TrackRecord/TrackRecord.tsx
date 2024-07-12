@@ -5,6 +5,7 @@ import { MotionTransition } from "../MotionTransition";
 import { Reveal } from "../Reveal"
 import CountUp from "react-countup";
 import { dataTrackRecord } from "./DataTrackRecord";
+import { ClientsTN } from "../ClientsTN";
 
 export function TrackRecord() {
     return (
@@ -14,13 +15,12 @@ export function TrackRecord() {
                 <div className="grid max-w-7xl mx-auto md:grid-cols-1">
                     <div className="flex flex-col justify-center items-center text-center">
                         <Reveal>
-                            <h1 className="text-3xl sm:text-4xl md:text-6xl font-semibold mb-3">
-                                <span className="block degradedBlue bg-OrangeLight font-semibold font-montserrat">Our track record</span>
+                            <h1 className="text-3xl sm:text-4xl md:text-6xl font-semibold mb-1">
+                                <span className="block degradedBlue bg-OrangeLight font-semibold font-montserrat">Nuestro recorrido</span>
                             </h1>
                         </Reveal>
-                        <h4 className="text-sm md:text-xl mb-3">Trusted by thousands of creators and professionals worldwide</h4>
                         <Reveal>
-                            <p className="w-full md:w-4/5 mt-10 text-base md:text-lg font-normal font-montserrat">Explore our track record of outstanding achievements and discover how we've driven our clients' success through innovative strategies and tangible results.</p>
+                            <p className="w-full mt-10 text-base md:text-lg font-normal font-montserrat">Cada día, más eventos se suman a This Night para optimizar su gestión y mejorar la experiencia de sus clientes.</p>
                         </Reveal>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ export function TrackRecord() {
                             {id === 3 && (
                                 <>
                                     <CountUp start={startNumber} end={endNumber} duration={2.5} enableScrollSpy />
-                                    {"% "}
+                                    {" "}
                                     <span className="degradedBlue bg-OrangeLight">{text}</span>
                                 </>
                             )}
@@ -54,6 +54,7 @@ export function TrackRecord() {
                     ))}
                 </div>
             </MotionTransition>
+            <ClientsTN/>
         </div>
     )
 }

@@ -20,7 +20,7 @@ export function FirstBlock() {
                             </h1>
                         </Reveal>
                         <Reveal>
-                            <p className="max-w-md mt-6 text-base md:text-xl font-light font-montserrat tracking-wide text-center md:text-left md:text-center">
+                            <p className="max-w-md mt-6 text-base md:text-xl font-light font-montserrat tracking-wide text-center md:text-center">
                                 Impulsa tu evento con la última tecnología y llevándolo a otro nivel.
                             </p>
                         </Reveal>

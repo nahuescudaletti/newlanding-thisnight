@@ -95,7 +95,7 @@ export function Cards() {
                 {/* Otros metadatos como Open Graph y Twitter Cards si es necesario */}
             </Head>
 
-            <div className="relative p-4 md:py-20 flex flex-col items-center" id='home'>
+            <div className="relative p-4 py-20 md:py-40 flex flex-col items-center" id='home'>
                 <BackgroundRadialLeft />
                 <div className="grid grid-cols-1 md:grid-cols-2 justify-around w-full max-w-5xl mx-auto">
                     <div className="flex flex-col items-center justify-center">

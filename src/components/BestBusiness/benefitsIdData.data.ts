@@ -2,23 +2,19 @@
 
 export const benefitsIdData = [
     {
-        title: "PERSONAL",
-        description: "Registro y seguimiento del personal, cantidad y monto total de las ventas, emisión y cancelación de carritos por parte del equipo. El personal de barras no tiene que manejar dinero, evitando así errores y fraudes.",
+        title: "LISTAS",
+        description: "Desarrollo de listas estáticas y dinámicas según las necesidades del evento. Seguimiento del ingreso de asistentes por listas específicas. Registro detallado de la recaudación monetaria asociada a cada lista.",
     },
     {
-        title: "UTILERÍA",
-        description: "Gestión y control de la utilería en la noche (devolución, como la representación monetaria asociada a la utilería no devuelta).",
+        title: "IDENTIFICACIÓN",
+        description: "Herramienta de búsqueda rápida y detallada para encontrar información de clientes durante el evento. Monitoreo en tiempo real del número de asistencias dentro del establecimiento.",
     },
     {
-        title: "CAJAS",
-        description: "Total de transacciones realizadas, depósito promedio por transacción, Control de la cantidad total de cajas utilizadas. Incluye un desglose detallado entre los pagos electrónicos, efectivo y gastos del personal interno.",
+        title: "GESTIÓN",
+        description: "Gestión de costos de ingreso por listas o individuo. Asignación de vouchers y regalos vinculados al DNI del cliente o lista.",
     },
     {
-        title: "AUMENTO DEL CONSUMO",
-        description: "Implementar el módulo N-CARD puede aumentar hasta un 20% el consumo respecto a los métodos de pagos convencionales en eventos gracias a la facilidad y comodidad de compra.",
-    },
-    {
-        title: "PUNTO DE CONTROL",
-        description: "Permite poner el QR de tu carta virtual y precios personalizables. El cliente podrá visualizar cuanto crédito dispone, consumo de su noche y utilería pendiente.",
+        title: "ACCESO",
+        description: "Funcionalidad para prohibir el acceso de personas específicas al evento, por tiempo y alertas detalladas.",
     },
 ];

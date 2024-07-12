@@ -1,11 +1,11 @@
-import 'swiper/css'
-import 'swiper/css/pagination'
-import Image from 'next/image'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { dataTeam } from '../Team.data'
-import { Reveal } from '@/components/Reveal'
-import { Keyboard, Mousewheel, Navigation, Pagination } from 'swiper/modules'
-import { getBasePath } from '@/utils/utils'
+import 'swiper/css';
+import 'swiper/css/pagination';
+import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { dataTeam } from '../Team.data';
+import { Reveal } from '@/components/Reveal';
+import { Keyboard, Mousewheel, Navigation, Pagination } from 'swiper/modules';
+import { getBasePath } from '@/utils/utils';
 
 export function Slide() {
     return (
@@ -31,16 +31,18 @@ export function Slide() {
             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
             className="h-[250px] w-full md:max-w-7xl"
         >
-            {dataTeam.map(({ id, name, work, testimonial, image }) => (
+            {dataTeam.map(({ id, name, work, image }) => (
                 <SwiperSlide key={id} className="my-5 cursor-pointer md:px-10">
                     <Reveal>
-                        <Image src={`${getBasePath()}/assets/testimonial-icon.png`} alt="Testimonial" width={50} height={50} className="w-auto h-auto" />
-                        <div className="my-5">
-                            {testimonial}
-                        </div>
-                        <div className="flex">
-                            <Image src={image} alt={name} width="50" height={50} className="mr-5" />
-                            <div>
+                        <div className="flex items-center justify-center text-white rounded-lg p-4 mx-auto">
+                            <Image
+                                src={image}
+                                alt={name}
+                                width={100}
+                                height={100}
+                                className="mr-5 rounded-full"
+                            />
+                            <div className="flex flex-col justify-center">
                                 <h4 className="text-center">{name}</h4>
                                 <p className="text-primaryDark">{work}</p>
                             </div>
@@ -49,5 +51,5 @@ export function Slide() {
                 </SwiperSlide>
             ))}
         </Swiper>
-    )
+    );
 }

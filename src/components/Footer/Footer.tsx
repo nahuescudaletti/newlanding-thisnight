@@ -6,11 +6,11 @@ import { getBasePath } from "@/utils/utils";
 
 export function Footer() {
     return (
-        <footer className="w-full md:py-10 text-white mt-auto">
+        <footer className="w-full md:pb-5 text-white mt-auto">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col md:flex-row items-center justify-between mb-6">
                     <div className="md:w-1/5 mb-4 md:mb-0 md:mr-6">
-                        <Image src={`${getBasePath()}/assets/PE_logo_white_1_.svg`} width={200} height={40} alt="Logo Bank" />
+                        <Image src={`${getBasePath()}/assets/logothisnight.png`} width={100} height={40} alt="Logo Bank" />
                     </div>
                     <div className="flex flex-col md:flex-row md:w-4/5 justify-around items-center md:gap-24">
                         {dataFooter.map(({ id, name, idLink }) => (
@@ -28,7 +28,7 @@ export function Footer() {
                 <div className="items-center justify-between md:flex">
                     <div className="my-3 text-xs md:text-lg">
                         <Reveal>
-                            lorem. All Rights Reserved.
+                            <span>© This night SRL. All Rights Reserved.</span>
                         </Reveal>
                     </div>
                     <div className="flex gap-5 items-center">
@@ -41,5 +41,5 @@ export function Footer() {
                 </div>
             </div>
         </footer>
-    )
+    );
 }

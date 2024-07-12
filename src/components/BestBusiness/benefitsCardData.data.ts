@@ -1,7 +1,7 @@
 // data.ts
 
 export const benefitsCardData = [
-    {
+ {
         title: "PERSONAL",
         description: "Registro y seguimiento del personal, cantidad y monto total de las ventas, emisión y cancelación de carritos por parte del equipo. El personal de barras no tiene que manejar dinero, evitando así errores y fraudes.",
     },
@@ -22,3 +22,6 @@ export const benefitsCardData = [
         description: "Permite poner el QR de tu carta virtual y precios personalizables. El cliente podrá visualizar cuanto crédito dispone, consumo de su noche y utilería pendiente.",
     },
 ];
+
+
+

@@ -44,7 +44,7 @@ export function Reveal({ children }: { children: React.ReactNode }) {
                     bottom: 4,
                     left: 0,
                     right: 0,
-                    background: "rgba(109, 228, 232, 0.5)", // Color de fondo con transparencia
+                    background: "#361F75", // Cambia aquí el color a "violeta oscuro"
                     zIndex: 20,
                     borderRadius: "inherit"
                 }}

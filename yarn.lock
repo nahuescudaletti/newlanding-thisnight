@@ -118,6 +118,33 @@
     wrap-ansi "^8.1.0"
     wrap-ansi-cjs "npm:wrap-ansi@^7.0.0"
 
+"@jiubao/hook@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/@jiubao/hook/-/hook-0.0.2.tgz"
+  integrity sha512-lkaA8R85yAxuexgX2vdodno8p6TVBGPt57Vih6TC4ZbMUWHc8IMET3uLEVHw6Lh1JY5DXgfq1plM/48yXQ86dQ==
+
+"@jiubao/link@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/@jiubao/link/-/link-0.0.1.tgz"
+  integrity sha512-ru3tpWKJv8RGjFjC5Mhq4wLnz9XtZ3mT16skfUSTdNkAGAcwI+O7Nd2iZWuSnSoxS2kdcanQ+cNKJTKO/5nSrA==
+
+"@jiubao/passive@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/@jiubao/passive/-/passive-0.0.1.tgz"
+  integrity sha512-jPEZk6jcRmPDgPySI86QniSdWUthX0vN2RQLy99QoKZph2zSTUgxarHfVJ1y6iAvDNnPv/pbBYZzLN8hfotLMg==
+
+"@jiubao/raf@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/@jiubao/raf/-/raf-0.0.2.tgz"
+  integrity sha512-sm8/Bf2codtjxYhhvv4UjQHVDoMZWdy8ey8Yo1H09d4F+XA0QG/AVkbHBGZG5adr30eSWPGWZDjRieE3OKhVvg==
+
+"@jiubao/utils@0.0.5":
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/@jiubao/utils/-/utils-0.0.5.tgz"
+  integrity sha512-s3VCwZMcQMuoKnT/b699vdu+y7ScOCMtUPLg35MYQwBEaIYhmg9Gl79r/r77pY6y+SGv3cSxIR2wzfDJ6fmhtg==
+  dependencies:
+    "@jiubao/passive" "^0.0.1"
+
 "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.5"
   resolved "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.5.tgz"
@@ -2843,6 +2870,17 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+
+swipe-core@^0.1.13:
+  version "0.1.13"
+  resolved "https://registry.npmjs.org/swipe-core/-/swipe-core-0.1.13.tgz"
+  integrity sha512-sPAajt2UkDz6//o0/PRUSGUyIVSdJ8Xag4WdRfZlHJl6r/zPIO0mLlqy0M5JIuu0MutYvUxzIr9/QSM9qsMy3g==
+  dependencies:
+    "@jiubao/hook" "^0.0.2"
+    "@jiubao/link" "^0.0.1"
+    "@jiubao/passive" "^0.0.1"
+    "@jiubao/raf" "^0.0.2"
+    "@jiubao/utils" "0.0.5"
 
 swiper@^10.3.1:
   version "10.3.1"

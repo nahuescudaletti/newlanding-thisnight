@@ -6,17 +6,16 @@ import { Slide } from "./Slide"
 
 export function Team() {
     return (
-        <div className="relative p-8 md:pt-20" id="testimonios">
+        <div className="relative" id="testimonios">
             <BackgroundRadialLeft />
-            <div className="grid max-w-6xl gap-8 mx-auto my-6 md:grid-cols-2">
+            <div className="flex flex-col items-center justify-center min-h-screen">
                 <Reveal>
-                    <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 font-montserrat">
-                        Meet our team.
+                    <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 font-montserrat degradedBlue bg-Orange">
+                        Equipo
                     </h2>
                 </Reveal>
+                <Slide />
             </div>
-
-            <Slide />
         </div>
     )
 }

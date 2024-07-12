@@ -1,5 +1,4 @@
 "use client";
-
 import { RiArrowRightLine } from 'react-icons/ri';
 import { BackgroundRadialRight } from "../BackgroundRadialRight";
 import { MotionTransition } from "../MotionTransition";
@@ -45,10 +44,16 @@ export function OurHelp() {
                                     </div>
                                     <Reveal>
                                         <button
-                                            className="text-orange-500 mt-4 flex items-center space-x-2 text-sm"
-                                        >
+                                            className="text-purple-500 mt-4 flex items-center space-x-2 text-sm"
+                                            onClick={() => {
+                                                const benefitsSection = document.getElementById('benefits');
+                                                if (benefitsSection) {
+                                                benefitsSection.scrollIntoView({ behavior: 'smooth' });
+                                                }
+                                            }}
+                                            >
                                             Learn more
-                                            <RiArrowRightLine className="text-orange-500 text-m" />
+                                            <RiArrowRightLine className="text-purple-500 text-m" />
                                         </button>
                                     </Reveal>
                                 </div>

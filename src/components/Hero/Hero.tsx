@@ -3,6 +3,7 @@ import { MotionTransition } from "../MotionTransition"
 import Image from "next/image"
 import { getBasePath } from '../../utils/utils'
 import Link from "next/link"
+import { Reveal } from "../Reveal"
 
 export function Hero() {
     return (
@@ -11,12 +12,14 @@ export function Hero() {
                 <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
                 <div className="relative z-10 flex flex-col justify-center items-center h-full text-white">
                     <h3 className="text-center text-base md:text-xl lg:text-4xl font-light font-montserrat">The ultimate nightlife experience</h3>
-                    <Image
-                        src={`${getBasePath()}/assets/celus.png`} // Replace with your image path
-                        alt="example" // Provide an appropriate alt text
-                        width={400} // Set the desired width
-                        height={400} // Set the desired height
-                    />
+                    <Reveal>
+                        <Image
+                            src={`${getBasePath()}/assets/celus.png`} // Replace with your image path
+                            alt="example" // Provide an appropriate alt text
+                            width={400} // Set the desired width
+                            height={400} // Set the desired height
+                        />
+                    </Reveal>
                     <p className="text-center text-xs md:text-sm lg:text-2xl font-montserrat mb-8">Gestiona tu evento en tiempo real desde una sola App.</p>
                     <div className="my-10">
                         <Link href="#form" className="px-4 py-3 rounded-md bg-OrangeRadial font-regular font-montserrat">Agendar un meet!</Link>

@@ -2,19 +2,19 @@ export const dataTrackRecord = [
   {
     id: 1,
     startNumber: 1,
-    endNumber: 300,
-    text: "Active clients",
+    endNumber:5532,
+    text: "Usuarios",
   },
   {
     id: 2,
     startNumber: 0,
-    endNumber: 15,
-    text: "Country bases",
+    endNumber: 7780,
+    text: "Tarjetas",
   },
   {
     id: 3,
     startNumber: 0,
-    endNumber: 100,
-    text: "Guaranteed results",
+    endNumber: 4548700,
+    text: "Liquidez alcanzada",
   },
 ];

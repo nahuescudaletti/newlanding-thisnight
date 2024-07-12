@@ -11,7 +11,12 @@ export const DataDropDown = [
   },
   {
     id: 3,
-    name: "Verifica tu Tarjeta",
+    name: "N-ID",
     idLink: "#products",
+  },
+  {
+    id: 3,
+    name: "Verifica tu Tarjeta",
+    idLink: "#verify",
   },
 ];
