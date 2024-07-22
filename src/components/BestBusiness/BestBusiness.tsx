@@ -169,12 +169,12 @@ export function BestBusiness() {
                     </div>
                     <div className="col-span-1 flex flex-col items-center mx-4">
                         <Reveal>
-                            <h4 className='text-xl md:text-4xl font-semibold text-center mb-4 font-montserrat'>N-ID</h4>
+                            <h4 className='text-xl md:text-4xl font-semibold text-center mb-4 font-montserrat'>Verifica tu tarjeta</h4>
                             <div className="flex justify-center mb-4">
                                 <Image
-                                    src={`${getBasePath()}/assets/id.png`}
+                                    src={`${getBasePath()}/assets/verify.png`}
                                     alt="Animated example"
-                                    width={100}
+                                    width={70}
                                     height={100}
                                 />
                             </div>
